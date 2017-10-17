@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mvp.waitingcardemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在为您叫车"
+        android:gravity="center"
+        android:textColor="#797A7D"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_tip1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正在为您优先叫车"
+        android:layout_below="@+id/tv_tip"
+        android:gravity="center"
+        android:textColor="#88898C"
+        android:textSize="10dp"
+        />
+
+    <com.example.mvp.waitingcardemo.WaitingCarView
+        android:id="@+id/didi_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_tip1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+
+        />
+</LinearLayout>
